@@ -1,13 +1,17 @@
 <?php
- $subject = 5 ; // 教科数
- $japanese = 60 ; // 国語
- $mathematics = 79 ; // 数学
- $science = 58 ; // 理科
- $society = 73 ; // 社会
- $english =67 ; // 英語
- $totalScore_MrA = $japanese + $mathematics + $science + $society + $english ; // A君の合計点
- $totalScore_MrA_Average = $totalScore_MrA / $subject ; // A君の平均点
- $totalScore_all_Average = 67.3 ; // 全体の平均点
+    $string = '100';
+
+    $subject = 5 ; // 教科数
+    $japanese = 60 ; // 国語
+    $mathematics = 79 ; // 数学
+    $science = 58 ; // 理科
+    $society = 73 ; // 社会
+    $english =67 ; // 英語
+    $totalScore_MrA = $japanese + $mathematics + $science + $society + $english ; // A君の合計点
+    $totalScore_MrA_Average = $totalScore_MrA / $subject ; // A君の平均点
+    $totalScore_all_Average = 67.3 ; // 全体の平均点
+
+    $case = 1;
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -19,7 +23,7 @@
 </head>
 <body>
     <p><?php
-        echo('文字列型の変数' . $string = 100 . '<br>' );
+        echo('文字列型の変数' . $string . '<br>' );
         echo('<br>課題1-1:<br>');
         if($string == 100) {
             echo('$string100は100です。<br>');
@@ -29,9 +33,9 @@
 
         echo('<br>課題1-2:<br>');
         if($string === 100) {
-            echo('$string100は100です。<br>');
+            echo('$string100は数字の100です。<br>');
         } else {
-            echo('$string100は100ではありません。<br>');
+            echo('$string100は100は数字の100ではありません。<br>');
         }
 
         echo('<br>課題1-3:<br>');
@@ -66,7 +70,7 @@
         }
 
         echo('<p>課題3-1:<br>');
-        switch ($case = 1 ) {
+        switch ($case ) {
             case true:
                 echo 'bool';
                 break;
@@ -80,7 +84,7 @@
         }
         
         echo('<p>課題3-2:<br>');
-        switch ($case = 1 ) {
+        switch ($case ) {
             case $case === true:
                 echo 'bool';
                 break;
